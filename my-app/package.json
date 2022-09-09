@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://atrivedi8988.github.io",
+  "homepage": "https://atrivedi8988.github.io/aman-deploy",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
