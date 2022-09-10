@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/aman-deploy/static/css/main.d4bde439.css",
-    "main.js": "/aman-deploy/static/js/main.be16d00c.js",
+    "main.js": "/aman-deploy/static/js/main.067c24ce.js",
     "static/js/787.d6cb1aba.chunk.js": "/aman-deploy/static/js/787.d6cb1aba.chunk.js",
     "static/media/logo.svg": "/aman-deploy/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/aman-deploy/index.html",
     "main.d4bde439.css.map": "/aman-deploy/static/css/main.d4bde439.css.map",
-    "main.be16d00c.js.map": "/aman-deploy/static/js/main.be16d00c.js.map",
+    "main.067c24ce.js.map": "/aman-deploy/static/js/main.067c24ce.js.map",
     "787.d6cb1aba.chunk.js.map": "/aman-deploy/static/js/787.d6cb1aba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4bde439.css",
-    "static/js/main.be16d00c.js"
+    "static/js/main.067c24ce.js"
   ]
 }
