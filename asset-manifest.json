@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/aman-trivedi-portfolio/static/css/main.d4bde439.css",
-    "main.js": "/aman-trivedi-portfolio/static/js/main.36f32d9d.js",
-    "static/js/787.d6cb1aba.chunk.js": "/aman-trivedi-portfolio/static/js/787.d6cb1aba.chunk.js",
-    "static/media/logo.svg": "/aman-trivedi-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/aman-trivedi-portfolio/index.html",
-    "main.d4bde439.css.map": "/aman-trivedi-portfolio/static/css/main.d4bde439.css.map",
-    "main.36f32d9d.js.map": "/aman-trivedi-portfolio/static/js/main.36f32d9d.js.map",
-    "787.d6cb1aba.chunk.js.map": "/aman-trivedi-portfolio/static/js/787.d6cb1aba.chunk.js.map"
+    "main.css": "/static/css/main.d4bde439.css",
+    "main.js": "/static/js/main.98c29ce5.js",
+    "static/js/787.d6cb1aba.chunk.js": "/static/js/787.d6cb1aba.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.d4bde439.css.map": "/static/css/main.d4bde439.css.map",
+    "main.98c29ce5.js.map": "/static/js/main.98c29ce5.js.map",
+    "787.d6cb1aba.chunk.js.map": "/static/js/787.d6cb1aba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4bde439.css",
-    "static/js/main.36f32d9d.js"
+    "static/js/main.98c29ce5.js"
   ]
 }
