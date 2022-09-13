@@ -13,3 +13,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.active {
+  border-radius: 1px solid red;
+  background-color: RGBA(0, 0, 0, 0.24);
+  padding: 5px 12px 5px 12px;
+  border-radius: 5px;
+}
+.navlinks{
+  font-size: large;
+}
+.navlinks:hover{
+  cursor: pointer;
+}
+.dev {
+  transition: transform 0.3s;
+}
+.dev:hover {
+  transform: scale(1.1);
+}

@@ -1,7 +1,9 @@
+import { Heading } from "@chakra-ui/react";
+
 export function Contact(){
     return (
         <>
-        <h1>Contact Page</h1>
+        <Heading height={"400px"}>Contact Page</Heading>
         
         </>
     )

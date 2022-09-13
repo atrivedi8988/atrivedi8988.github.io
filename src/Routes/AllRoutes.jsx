@@ -6,15 +6,15 @@ import { Project } from "../Components/Project";
 import { Skill } from "../Components/Skill";
 
 export function AllRoutes(){
-    return (
-        <>
-        <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/about" element={<About/>} />
-            <Route path="/contact" element={<Contact/>} />
-            <Route path="/project" element={<Project/>} />
-            <Route path="/skill" element={<Skill/>} />
-        </Routes>
-        </>
-    )
+    // return (
+    //     <>
+    //     <Routes>
+    //         <Route path="/" element={<Home/>} />
+    //         <Route path="/about" element={<About/>} />
+    //         <Route path="/skill" element={<Skill/>} />
+    //         <Route path="/project" element={<Project/>} />
+    //         <Route path="/contact" element={<Contact/>} />
+    //     </Routes>
+    //     </>
+    // )
 }

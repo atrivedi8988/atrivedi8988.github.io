@@ -1,7 +1,10 @@
+import { Heading } from "@chakra-ui/react";
+
 export function About(){
     return (
         <>
-        <h1>About Page</h1>
+        <Heading height={"400px"}>ABOUT ME</Heading>
+
         
         </>
     )

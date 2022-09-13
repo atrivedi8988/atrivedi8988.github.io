@@ -11,7 +11,7 @@ import {
 export function Home() {
   return (
     <>
-      <Box>
+      <Box className="home">
         <HStack
           // border={"1px solid green"}
           justifyContent="space-evenly"

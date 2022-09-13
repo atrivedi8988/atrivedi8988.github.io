@@ -1,6 +1,4 @@
-import styles from "../cssFolder/navbar.module.css";
-
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import {
   Box,
   Button,
@@ -15,57 +13,70 @@ import { NavDrawer } from "../DrawerNavbar/NavDrawer";
 
 const links = [
   {
-    to: "/",
+    to: "home",
     page: "Home",
   },
   {
-    to: "/about",
+    to: "about",
     page: "About",
   },
   {
-    to: "/skill",
+    to: "skill",
     page: "Skill",
   },
   {
-    to: "/project",
+    to: "project",
     page: "Project",
   },
   {
-    to: "/contact",
+    to: "contact",
     page: "Contact",
   },
 ];
-const activeStyle = {
-  backgroundColor: "RGBA(0, 0, 0, 0.24)",
-  padding: "5px 12px 5px 12px",
-  borderRadius: "5px",
-};
 export function Navbar() {
-  const { isOpen, onOpen, onClose } = useDisclosure()
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
   const NavBgColor = useColorModeValue("gray.50", "gray.900");
+
   return (
     <>
-    
-      <Box bgColor={NavBgColor} >
-        <HStack justifyContent="space-between" paddingLeft={"30px"} paddingRight="3rem" height="5rem">
-          <Box>
+      <Box
+        bgColor={NavBgColor}
+        position="sticky"
+        top={"0px"}
+        left="0px"
+        zIndex={1}
+      >
+        <HStack
+          justifyContent="space-between"
+          paddingLeft={"30px"}
+          paddingRight="3rem"
+          height="5rem"
+        >
+          <Box className="home">
+            <Link className="navlinks" to="home" >
             <Image
               src={require("../files/logo2.png")}
               height="50px"
               width="120px"
             />
+            </Link>
           </Box>
           <Box display={{ base: "none", sm: "none", md: "inline-flex" }}>
-            <HStack className={styles.linksHstack} height="5rem">
+            <HStack gap={"30px"} height="5rem">
               {links.map((el, i) => (
-                <NavLink
-                  key={i}
+                <Link
+                key={i}
+                className="navlinks"
+                  activeClass="active"
+                  smooth
+                  spy
                   to={el.to}
-                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                  offset={-70}
+                  duration={500}
                 >
                   {el.page}
-                </NavLink>
+                </Link>
               ))}
               <Button
                 borderRadius={"50%"}
@@ -78,14 +89,17 @@ export function Navbar() {
           </Box>
           {/* ----------tablet and mobile hubergicon------------ */}
           <Box display={{ base: "inline-flex", sm: "inline-flex", md: "none" }}>
-            <HStack gap={"20px"} >
-            <Button borderRadius={"50%"} width="42px" onClick={toggleColorMode}>
-              {colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
-            </Button>
-            <Box>
-              <NavDrawer isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
-              
-            </Box>
+            <HStack gap={"20px"}>
+              <Button
+                borderRadius={"50%"}
+                width="42px"
+                onClick={toggleColorMode}
+              >
+                {colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
+              </Button>
+              <Box>
+                <NavDrawer isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
+              </Box>
             </HStack>
           </Box>
         </HStack>
