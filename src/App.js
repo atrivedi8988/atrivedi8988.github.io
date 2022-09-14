@@ -8,12 +8,13 @@ import { Project } from "./Components/Project";
 import { Skill } from "./Components/Skill";
 
 function App() {
-  const BodyBgColor = useColorModeValue("gray.100", "gray.800");
+  const BodyBgColor = useColorModeValue("whiteAlpha.900", "gray.800");
+  const footerBgColor = useColorModeValue("gray.100", "gray.900");
   const { colorMode } = useColorMode();
 
   return (
     <div className="App">
-      <Box bgColor={BodyBgColor} width={"100vw"}>
+      <Box bgColor={BodyBgColor}>
         <Navbar />
         <Box id="home">
           <Home />
@@ -61,7 +62,7 @@ function App() {
           <Project />
         </Box>
 
-        {colorMode === "dark" ? (
+        {/* {colorMode === "dark" ? (
           <hr style={{ marginTop: "50px", marginBottom: "50px" }} />
         ) : (
           <hr
@@ -71,8 +72,8 @@ function App() {
               borderColor: "RGBA(0, 0, 0, 0.15)",
             }}
           />
-        )}
-        <Box id="contact">
+        )} */}
+        <Box id="contact" bgColor={footerBgColor} >
           <Contact />
         </Box>
       </Box>
