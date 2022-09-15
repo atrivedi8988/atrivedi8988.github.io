@@ -63,7 +63,7 @@ export function Home() {
                 fontSize={["12px", "12px", "18px"]}
                 onClick={() => {
                   return window.open(
-                    "https://drive.google.com/file/d/1tFcj6z9DFDZyKf7UC7Z76iggcaVZayAN/view",
+                    "https://drive.google.com/file/d/1iygmMho_IKyuP06aqoMeG06y-OHUdqqF/view?usp=sharing",
                     "_blank"
                   );
                 }}
