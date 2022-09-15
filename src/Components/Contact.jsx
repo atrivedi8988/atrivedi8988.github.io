@@ -25,9 +25,12 @@ export function Contact() {
   const { colorMode } = useColorMode();
   return (
     <>
-      <Box pb="30px" height={{base:"920px",sm:"920px",md:"920px",lg:"600px"}}>
+      <Box
+        pb="30px"
+        height={{ base: "920px", sm: "920px", md: "920px", lg: "600px" }}
+      >
         <Flex
-          direction={["column","column","row"]}
+          direction={["column", "column", "row"]}
           margin="auto"
           justifyContent="space-evenly"
           pr="50px"
@@ -61,8 +64,6 @@ export function Contact() {
             </Box>
           </VStack>
 
-        
-
           <VStack alignItems={"flex-start"} gap="20px" marginTop={"60px"}>
             <Box>
               <Text fontSize={"2xl"}>Contact Me</Text>
@@ -84,22 +85,39 @@ export function Contact() {
             </HStack>
             <HStack>
               <Box _hover={{ color: "#0A66C2", cursor: "pointer" }}>
-                <AiFillLinkedin size="25px" />
+                <Link
+                  href="https://www.linkedin.com/in/aman-trivedi-439362233/"
+                  target={"_blank"}
+                >
+                  <AiFillLinkedin size="25px" />
+                </Link>
               </Box>
               <Box _hover={{ color: "#6e5494", cursor: "pointer" }}>
-                <AiFillGithub size="25px" />
+                <Link href="https://github.com/atrivedi8988" target={"_blank"}>
+                  <AiFillGithub size="25px" />
+                </Link>
               </Box>
               <Box _hover={{ color: "#F56040", cursor: "pointer" }}>
-                <AiFillInstagram size="25px" />
+                <Link
+                  href="https://www.instagram.com/amantrivdi/"
+                  target={"_blank"}
+                >
+                  <AiFillInstagram size="25px" />
+                </Link>
               </Box>
               <Box _hover={{ color: "#4267B2", cursor: "pointer" }}>
-                <AiFillFacebook size="25px" />
+                <Link
+                  href="https://www.facebook.com/aman.trivdi"
+                  target={"_blank"}
+                >
+                  <AiFillFacebook size="25px" />
+                </Link>
               </Box>
             </HStack>
           </VStack>
         </Flex>
 
-        <Box >
+        <Box>
           {colorMode === "dark" ? (
             <hr
               style={{
@@ -120,7 +138,7 @@ export function Contact() {
               }}
             />
           )}
-        </Box> 
+        </Box>
 
         <Text>
           Copyright ©2022 All rights reserved | This template is made with ♥ by{" "}
