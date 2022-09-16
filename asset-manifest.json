@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d78d73fd.css",
-    "main.js": "/static/js/main.af81045f.js",
+    "main.js": "/static/js/main.b692e652.js",
     "static/js/787.d6cb1aba.chunk.js": "/static/js/787.d6cb1aba.chunk.js",
     "static/media/IDEAKART.png": "/static/media/IDEAKART.c265667e2e37b52b8316.png",
     "static/media/NORDSTROM.png": "/static/media/NORDSTROM.d59d464ecf77e571e212.png",
@@ -11,11 +11,11 @@
     "static/media/logo2.png": "/static/media/logo2.dc6e8d6795d34485038a.png",
     "index.html": "/index.html",
     "main.d78d73fd.css.map": "/static/css/main.d78d73fd.css.map",
-    "main.af81045f.js.map": "/static/js/main.af81045f.js.map",
+    "main.b692e652.js.map": "/static/js/main.b692e652.js.map",
     "787.d6cb1aba.chunk.js.map": "/static/js/787.d6cb1aba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d78d73fd.css",
-    "static/js/main.af81045f.js"
+    "static/js/main.b692e652.js"
   ]
 }
