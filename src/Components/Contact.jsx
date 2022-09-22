@@ -20,15 +20,36 @@ import { HiLocationMarker } from "react-icons/hi";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { Link } from "@chakra-ui/react";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 export function Contact() {
   const { colorMode } = useColorMode();
+  const form = useRef();
+  const sendEmail = (e)=>{
+      e.preventDefault();
+      console.log("click")
+      emailjs
+        .sendForm(
+          "service_974s8fd",
+          "template_suec14w",
+          form.current,
+          "7RWCxDB7C6hPkTXIh"
+        )
+        .then(
+          (result) => {
+            console.log(result);
+          },
+          (error) => {
+            console.log(error);
+          }
+        );
+      e.target.reset();
+    
+  }
   return (
     <>
-      <Box
-        pb="30px"
-        height={{ base: "920px", sm: "920px", md: "920px", lg: "600px" }}
-      >
+      <Box pb="30px">
         <Flex
           direction={["column", "column", "row"]}
           margin="auto"
@@ -41,27 +62,29 @@ export function Contact() {
             <Box>
               <Text fontSize={"2xl"}>Chat With Me</Text>
             </Box>
-            <Box>
-              <FormLabel fontSize={"12px"}>Your Name</FormLabel>
-              <Input type="text" width="20rem" />
-            </Box>
-            <Box>
-              <FormLabel fontSize={"12px"}>Email</FormLabel>
-              <Input type="text" width="20rem" />
-            </Box>
-            <Box>
-              <FormLabel fontSize={"12px"}>Subject</FormLabel>
-              <Input type="text" width="20rem" />
-            </Box>
-            <Box>
-              <FormLabel fontSize={"12px"}>Message</FormLabel>
-              <Textarea size={"sm"} width="20rem" placeholder="Message" />
-            </Box>
-            <Box>
-              <Button mt={"20px"} bgColor={"green"}>
-                Send Message
-              </Button>
-            </Box>
+            <form  ref={form} onSubmit={sendEmail}>
+              <Box>
+                <FormLabel fontSize={"12px"}>Your Name</FormLabel>
+                <Input type="text" width="20rem" name="from_name" />
+              </Box>
+              <Box>
+                <FormLabel fontSize={"12px"}>Email</FormLabel>
+                <Input type="text" width="20rem" name="from_email" />
+              </Box>
+              <Box>
+                <FormLabel fontSize={"12px"}>Subject</FormLabel>
+                <Input type="text" width="20rem" name="from_subject" />
+              </Box>
+              <Box>
+                <FormLabel fontSize={"12px"}>Message</FormLabel>
+                <Textarea size={"sm"} width="20rem" placeholder="Message" name="from_message" />
+              </Box>
+              <Box>
+                <Button mt={"20px"} bgColor={"green"} type="submit">
+                  Send Message
+                </Button>
+              </Box>
+            </form>
           </VStack>
 
           <VStack alignItems={"flex-start"} gap="20px" marginTop={"60px"}>

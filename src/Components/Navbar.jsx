@@ -37,6 +37,14 @@ export function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
   const NavBgColor = useColorModeValue("gray.50", "gray.900");
+  // const logoImage = ()=>{
+  //   if(colorMode=="light"){
+  //     return 
+  //   }
+  //   if(colorMode=="dark"){
+
+  //   }
+  // }
 
   return (
     <>
@@ -56,9 +64,8 @@ export function Navbar() {
           <Box className="home">
             <Link className="navlinks" to="home" >
             <Image
-              src={require("../files/logo2.png")}
-              height="50px"
-              width="120px"
+              src={colorMode=="light"?require("../files/logo-2.png"):require("../files/logo-3.png")}
+              width="200px"
             />
             </Link>
           </Box>

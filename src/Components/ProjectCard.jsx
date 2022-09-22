@@ -1,6 +1,5 @@
 import { Box, HStack, Image, Text, Button, VStack, Flex } from "@chakra-ui/react";
 export function ProjectCard({data}){
-  console.log(data.img)
     return (
         <>
          <Flex justifyContent={["center","center","space-evenly"]} alignItems="center" direction={["column","column","row"]} mb="100px">

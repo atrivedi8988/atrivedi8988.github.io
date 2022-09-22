@@ -11,7 +11,6 @@ import {
 
 export function About() {
     
-    
   return (
     <>
       <Heading textAlign={"center"}mb={"25px"}>

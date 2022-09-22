@@ -7,6 +7,8 @@ import {
   Heading,
   Button,
 } from "@chakra-ui/react";
+import { FaCloudDownloadAlt } from 'react-icons/fa'
+import { Title } from "./Title";
 
 export function Home() {
   return (
@@ -24,7 +26,9 @@ export function Home() {
             alignItems={"flex-start"}
           >
             <Text fontSize={{ base: "md", sm: "2xl", md: "4xl" }}>
-              Hi👋, I'm
+              Hi <span className="wave" role="img" aria-labelledby="wave">
+                  👋🏻
+                </span> I'm
             </Text>
             <Heading
               fontSize={{ base: "xl", sm: "3xl", md: "6xl" }}
@@ -36,8 +40,9 @@ export function Home() {
             <Text
               fontSize={{ base: "md", sm: "2xl", md: "4xl" }}
               paddingBottom="-30px"
+              color={"orange.400"}
             >
-              Full Stack Developer
+              <Title/>
             </Text>
             <Text
               align={"start"}
@@ -70,6 +75,7 @@ export function Home() {
               >
                 Resume
               </Button>
+              <Button><a href={require("../files/Aman_Trivedi_Resume.pdf")} download><FaCloudDownloadAlt/></a></Button>
             </HStack>
           </VStack>
           <Box>
