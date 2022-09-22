@@ -1,4 +1,4 @@
-import { Box, Heading, VStack } from "@chakra-ui/react";
+import { Heading, VStack } from "@chakra-ui/react";
 import { ProjectCard } from "./ProjectCard";
 import GitHubCalendar from "react-github-calendar";
 

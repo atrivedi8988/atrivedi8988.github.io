@@ -64,7 +64,7 @@ export function Navbar() {
           <Box className="home">
             <Link className="navlinks" to="home" >
             <Image
-              src={colorMode=="light"?require("../files/logo-2.png"):require("../files/logo-3.png")}
+              src={colorMode==="light"?require("../files/logo-2.png"):require("../files/logo-3.png")}
               width="200px"
             />
             </Link>

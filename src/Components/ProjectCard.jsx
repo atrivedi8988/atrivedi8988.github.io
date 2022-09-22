@@ -1,4 +1,4 @@
-import { Box, HStack, Image, Text, Button, VStack, Flex } from "@chakra-ui/react";
+import { Box, HStack, Image, Text, Button, Flex } from "@chakra-ui/react";
 export function ProjectCard({data}){
     return (
         <>

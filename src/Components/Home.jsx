@@ -8,6 +8,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { FaCloudDownloadAlt } from 'react-icons/fa'
+import { Link } from "react-scroll";
 import { Title } from "./Title";
 
 export function Home() {
@@ -54,6 +55,7 @@ export function Home() {
               <br /> Cloning some E-commerse Websites{" "}
             </Text>
             <HStack>
+              <Link to="contact">
               <Button
                 fontSize={["12px", "12px", "18px"]}
                 width={["60px", "60px", "100px"]}
@@ -63,6 +65,7 @@ export function Home() {
               >
                 Hire Me
               </Button>
+              </Link>
               <Button
                 width={["60px", "60px", "100px"]}
                 fontSize={["12px", "12px", "18px"]}
