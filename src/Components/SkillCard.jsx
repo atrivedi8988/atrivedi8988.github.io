@@ -40,10 +40,13 @@ const SkillCard = () => {
           bg={bgColor}
           border={bc}
           className="dev"
+          data-aos="zoom-in-up"
         >
-            <VStack alignItems={"center"}>
-          <SiHtml5 className="dev" fontSize="4rem" />
-          <Text mt="15px">Html</Text>
+            <VStack alignItems={"center"}  >
+          
+            
+          <SiHtml5 className="dev" fontSize="4rem"/>
+          <Text mt="15px" >Html</Text>
 
             </VStack>
         </Box>
@@ -55,6 +58,7 @@ const SkillCard = () => {
           bg={bgColor}
           border={bc}
           className="dev"
+          data-aos="zoom-in-up"
         >
             <VStack alignItems={"center"}><SiCss3 className="dev" fontSize="4rem" />
           <Text mt="15px">Css</Text></VStack>
@@ -68,6 +72,7 @@ const SkillCard = () => {
           bg={bgColor}
           border={bc}
           className="dev"
+          data-aos="zoom-in-up"
         >
              <VStack alignItems={"center"}> <SiJavascript className="dev" fontSize="4rem" />
           <Text mt="15px">JavaScript</Text></VStack>
@@ -81,6 +86,7 @@ const SkillCard = () => {
           bg={bgColor}
           border={bc}
           className="dev"
+          data-aos="zoom-in-up"
         >
              <VStack alignItems={"center"}><SiReact className="dev" fontSize="4rem" />
           <Text mt="15px">React</Text></VStack>
@@ -94,6 +100,7 @@ const SkillCard = () => {
           bg={bgColor}
           border={bc}
           className="dev"
+          data-aos="zoom-in-up"
         >
              <VStack alignItems={"center"}> <SiRedux className="dev" fontSize="4rem" />
           <Text mt="15px">Redux</Text></VStack>
@@ -107,6 +114,7 @@ const SkillCard = () => {
           bg={bgColor}
           border={bc}
           className="dev"
+          data-aos="zoom-in-up"
         >
              <VStack alignItems={"center"}><SiExpress className="dev" fontSize="4rem" />
           <Text mt="15px">Express JS</Text></VStack>
@@ -120,6 +128,7 @@ const SkillCard = () => {
           bg={bgColor}
           border={bc}
           className="dev"
+          data-aos="zoom-in-up"
         >
              <VStack alignItems={"center"}><SiMongodb className="dev" fontSize="4rem" />
           <Text mt="15px">Mongo DB</Text></VStack>
@@ -133,6 +142,7 @@ const SkillCard = () => {
           bg={bgColor}
           border={bc}
           className="dev"
+          data-aos="zoom-in-up"
         >
              <VStack alignItems={"center"}><SiNodedotjs  className="dev" fontSize="4rem" />
           <Text mt="15px">Node JS</Text></VStack>
@@ -146,6 +156,7 @@ const SkillCard = () => {
           bg={bgColor}
           border={bc}
           className="dev"
+          data-aos="zoom-in-up"
         >
              <VStack alignItems={"center"}><SiChakraui className="dev" fontSize="4rem" />
           <Text mt="15px">Chakra UI</Text></VStack>
@@ -159,6 +170,7 @@ const SkillCard = () => {
           bg={bgColor}
           border={bc}
           className="dev"
+          data-aos="zoom-in-up"
         >
              <VStack alignItems={"center"}> <SiPostman className="dev" fontSize="4rem" />
           <Text mt="15px">Postman</Text></VStack>
@@ -172,6 +184,7 @@ const SkillCard = () => {
           bg={bgColor}
           border={bc}
           className="dev"
+          data-aos="zoom-in-up"
         >
              <VStack alignItems={"center"}><SiGit className="dev" fontSize="4rem" />
           <Text mt="15px">Git</Text></VStack>
@@ -185,6 +198,7 @@ const SkillCard = () => {
           bg={bgColor}
           border={bc}
           className="dev"
+          data-aos="zoom-in-up"
         >
              <VStack alignItems={"center"}><svg
             stroke="currentColor"
@@ -208,6 +222,7 @@ const SkillCard = () => {
           bg={bgColor}
           border={bc}
           className="dev"
+          data-aos="zoom-in-up"
         >
              <VStack alignItems={"center"}><SiHeroku className="dev" fontSize="4rem" />
           <Text mt="15px">Heroku</Text></VStack>

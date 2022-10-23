@@ -43,10 +43,6 @@ export function Project() {
       {data.map((el, i) => {
         return <ProjectCard key={i} data={{ ...el }} />;
       })}
-      <VStack justifyContent={"center"} gap="30px">
-        <Heading>GitHub Calender</Heading>
-        <GitHubCalendar username="atrivedi8988" />
-      </VStack>
     </>
   );
 }

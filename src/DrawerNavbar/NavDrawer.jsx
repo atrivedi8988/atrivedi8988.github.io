@@ -21,6 +21,10 @@ const links = [
     page: "Project",
   },
   {
+    to: "github",
+    page:"Github"
+  },
+  {
     to: "contact",
     page: "Contact",
   },

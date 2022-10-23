@@ -8,12 +8,14 @@ import {
   Th,
   Tr,
 } from "@chakra-ui/react";
+import "aos/dist/aos.css";
+
 
 export function About() {
     
   return (
     <>
-      <Heading textAlign={"center"}mb={"25px"}>
+      <Heading textAlign={"center"}mb={"25px"}  >
         ABOUT ME
       </Heading>
       <Flex
@@ -30,7 +32,7 @@ export function About() {
           width={["12rem", "32rem", "32rem"]}
           className="aboutTable"
           margin="auto"
-        //   border={"1px solid blue"}
+          data-aos="zoom-in-right"
         >
           <Tr>
             <Th>Name</Th>
@@ -71,6 +73,7 @@ export function About() {
             maxHeight={["20rem", "20rem", "33rem"]}
             overflowY={["scroll", "scroll", "hidden"]}
             p={"0px 20px 0px 20px"}
+            data-aos="zoom-in-left"
           >
             Hello, I am Aman Trivedi from Indore. I graduated in B.Tech
             Mechanical Engineering in 2022 from Prestige College, RGPV

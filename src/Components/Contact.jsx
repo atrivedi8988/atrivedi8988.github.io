@@ -26,30 +26,29 @@ import { useRef } from "react";
 export function Contact() {
   const { colorMode } = useColorMode();
   const form = useRef();
-  const sendEmail = (e)=>{
-      e.preventDefault();
-      console.log("click")
-      emailjs
-        .sendForm(
-          "service_974s8fd",
-          "template_suec14w",
-          form.current,
-          "7RWCxDB7C6hPkTXIh"
-        )
-        .then(
-          (result) => {
-            console.log(result);
-          },
-          (error) => {
-            console.log(error);
-          }
-        );
-      e.target.reset();
-    
-  }
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log("click");
+    emailjs
+      .sendForm(
+        "service_974s8fd",
+        "template_suec14w",
+        form.current,
+        "7RWCxDB7C6hPkTXIh"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <>
-      <Box pb="30px">
+      <Box pb={"30px"}>
         <Flex
           direction={["column", "column", "row"]}
           margin="auto"
@@ -58,11 +57,11 @@ export function Contact() {
           pl="50px"
           mt={"50px"}
         >
-          <VStack mt="50px">
+          <VStack mt="50px" data-aos="fade-right">
             <Box>
               <Text fontSize={"2xl"}>Chat With Me</Text>
             </Box>
-            <form  ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail}>
               <Box>
                 <FormLabel fontSize={"12px"}>Your Name</FormLabel>
                 <Input type="text" width="20rem" name="from_name" />
@@ -77,7 +76,12 @@ export function Contact() {
               </Box>
               <Box>
                 <FormLabel fontSize={"12px"}>Message</FormLabel>
-                <Textarea size={"sm"} width="20rem" placeholder="Message" name="from_message" />
+                <Textarea
+                  size={"sm"}
+                  width="20rem"
+                  placeholder="Message"
+                  name="from_message"
+                />
               </Box>
               <Box>
                 <Button mt={"20px"} bgColor={"green"} type="submit">
@@ -87,7 +91,12 @@ export function Contact() {
             </form>
           </VStack>
 
-          <VStack alignItems={"flex-start"} gap="20px" marginTop={"60px"}>
+          <VStack
+            alignItems={"flex-start"}
+            gap="20px"
+            marginTop={"60px"}
+            data-aos="fade-left"
+          >
             <Box>
               <Text fontSize={"2xl"}>Contact Me</Text>
             </Box>
@@ -162,13 +171,18 @@ export function Contact() {
             />
           )}
         </Box>
-
-        <Text>
-          Copyright ©2022 All rights reserved | This template is made with ♥ by{" "}
-          <Link href="https://github.com/atrivedi8988" target={"_blank"}>
-            amantrivedi
-          </Link>
-        </Text>
+        <Box data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0">
+          <Text>
+            Copyright ©2022 All rights reserved | This template is made with ♥
+            by{" "}
+            <Link href="https://github.com/atrivedi8988" target={"_blank"}>
+              amantrivedi
+            </Link>
+          </Text>
+        </Box>
       </Box>
     </>
   );

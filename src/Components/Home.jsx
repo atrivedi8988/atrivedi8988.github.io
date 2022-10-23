@@ -8,6 +8,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { FaCloudDownloadAlt } from 'react-icons/fa'
+import { BiShowAlt } from 'react-icons/bi';
 import { Link } from "react-scroll";
 import { Title } from "./Title";
 
@@ -76,7 +77,9 @@ export function Home() {
                   );
                 }}
               >
-                Resume
+                Resume 
+                &nbsp;
+                <span><BiShowAlt/></span>
               </Button>
               <Button><a href={require("../files/Aman_Trivedi_Resume.pdf")} download><FaCloudDownloadAlt/></a></Button>
             </HStack>

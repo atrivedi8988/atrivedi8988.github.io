@@ -2,6 +2,7 @@ import { Box, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import "./App.css";
 import { About } from "./Components/About";
 import { Contact } from "./Components/Contact";
+import { GitHub } from "./Components/Github";
 import { Home } from "./Components/Home";
 import { Navbar } from "./Components/Navbar";
 import { Project } from "./Components/Project";
@@ -58,11 +59,12 @@ function App() {
             }}
           />
         )}
+        
         <Box id="project">
           <Project />
         </Box>
 
-        {/* {colorMode === "dark" ? (
+        {colorMode === "dark" ? (
           <hr style={{ marginTop: "50px", marginBottom: "50px" }} />
         ) : (
           <hr
@@ -72,8 +74,13 @@ function App() {
               borderColor: "RGBA(0, 0, 0, 0.15)",
             }}
           />
-        )} */}
-        <Box id="contact" bgColor={footerBgColor} >
+        )}
+        
+        <Box id="github">
+          <GitHub />
+        </Box>
+
+        <Box id="contact" bgColor={footerBgColor}>
           <Contact />
         </Box>
       </Box>
