@@ -68,7 +68,7 @@ export function Home() {
               </Button>
               </Link>
               <Button
-                width={["60px", "60px", "100px"]}
+                width={["80px", "80px", "120px"]}
                 fontSize={["12px", "12px", "18px"]}
                 onClick={() => {
                   return window.open(
@@ -87,8 +87,8 @@ export function Home() {
           <Box>
             <Image
               src={require("../files/profile.jpg")}
-              borderRadius="40px"
-              width={["150px", "150px", "250px"]}
+              borderRadius="50%"
+              width={["200px", "200px", "300px"]}
             />
           </Box>
         </HStack>
