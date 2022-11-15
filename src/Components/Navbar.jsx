@@ -90,6 +90,20 @@ export function Navbar() {
                 </Link>
               ))}
               <Button
+                width={["80px", "80px", "120px"]}
+                fontSize={["12px", "12px", "18px"]}
+                onClick={() => {
+                  return window.open(
+                    "https://drive.google.com/file/d/1iygmMho_IKyuP06aqoMeG06y-OHUdqqF/view?usp=sharing",
+                    "_blank"
+                  );
+                }}
+              >
+                Resume 
+                &nbsp;
+                {/* <span><BiShowAlt/></span> */}
+              </Button>
+              <Button
                 borderRadius={"50%"}
                 width="42px"
                 onClick={toggleColorMode}
