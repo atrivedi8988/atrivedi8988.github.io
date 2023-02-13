@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.addaeef7.css",
+    "main.js": "/static/js/main.867d0b40.js",
+    "static/js/787.d6cb1aba.chunk.js": "/static/js/787.d6cb1aba.chunk.js",
+    "static/media/IDEAKART.png": "/static/media/IDEAKART.c265667e2e37b52b8316.png",
+    "static/media/COMICADIGITAL.png": "/static/media/COMICADIGITAL.9af8ae545f1b14f3a42d.png",
+    "static/media/NORDSTROM.png": "/static/media/NORDSTROM.d59d464ecf77e571e212.png",
+    "static/media/BathAndBody.png": "/static/media/BathAndBody.c7f4ea4ea1bf62d75d06.png",
+    "static/media/BITRIX24.png": "/static/media/BITRIX24.d9342db875d70cc8ee9a.png",
+    "static/media/Aman-Trivedi-Resume.pdf": "/static/media/Aman-Trivedi-Resume.c90a2c87491f38ab52c2.pdf",
+    "static/media/profile1.jpg": "/static/media/profile1.67c08336a687ecfd0114.jpg",
+    "static/media/profile.jpg": "/static/media/profile.e1c398f7938bb8e0c29e.jpg",
+    "static/media/logo-3.png": "/static/media/logo-3.0cc99dfceeb6ccb892f0.png",
+    "static/media/logo-2.png": "/static/media/logo-2.35e7a7fef61592330495.png",
+    "static/media/logo2.png": "/static/media/logo2.dc6e8d6795d34485038a.png",
+    "index.html": "/index.html",
+    "main.addaeef7.css.map": "/static/css/main.addaeef7.css.map",
+    "main.867d0b40.js.map": "/static/js/main.867d0b40.js.map",
+    "787.d6cb1aba.chunk.js.map": "/static/js/787.d6cb1aba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.addaeef7.css",
+    "static/js/main.867d0b40.js"
+  ]
+}
