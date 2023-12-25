@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { NavDrawer } from "../DrawerNavbar/NavDrawer";
+import personalInfo from "../data/personalnfo";
 
 const links = [
   {
@@ -68,7 +69,7 @@ export function Navbar() {
           <Box className="home">
             <Link className="navlinks" to="home" >
             <Image
-              src={colorMode==="light"?require("../files/logo-2.png"):require("../files/logo-3.png")}
+              src={colorMode==="light"?personalInfo?.favIconLightMode:personalInfo?.favIconDarkMode}
               width="200px"
             />
             </Link>
@@ -94,7 +95,7 @@ export function Navbar() {
                 fontSize={["12px", "12px", "18px"]}
                 onClick={() => {
                   return window.open(
-                    "https://drive.google.com/file/d/1iygmMho_IKyuP06aqoMeG06y-OHUdqqF/view?usp=sharing",
+                    personalInfo?.resumeDriveLink,
                     "_blank"
                   );
                 }}

@@ -11,6 +11,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 import { BiShowAlt } from "react-icons/bi";
 import { Link } from "react-scroll";
 import { Title } from "./Title";
+import personalnfo from "../data/personalnfo";
 
 export function Home() {
   return (
@@ -39,7 +40,7 @@ export function Home() {
               pt="5px"
               pb="5px"
             >
-              Aman Trivedi
+              {personalnfo?.fullName}
             </Heading>
             <Text
               fontSize={{ base: "md", sm: "2xl", md: "4xl" }}
@@ -53,10 +54,9 @@ export function Home() {
               fontSize={{ base: "10px", sm: "15px", md: "sm" }}
               style={{ marginTop: "0px" }}
               fontWeight="500"
+              width={"72%"}
             >
-              Intermidiate at - ReactJS, NodeJS, MongoDB. love to play with
-              DOMS.
-              <br /> Cloning some E-commerse Websites{" "}
+              {personalnfo?.subHeading}
             </Text>
             <HStack>
               <Link to="contact">
@@ -75,7 +75,7 @@ export function Home() {
                 fontSize={["12px", "12px", "18px"]}
                 onClick={() => {
                   return window.open(
-                    "https://drive.google.com/file/d/1iygmMho_IKyuP06aqoMeG06y-OHUdqqF/view?usp=sharing",
+                    personalnfo?.resumeDriveLink,
                     "_blank"
                   );
                 }}
@@ -86,7 +86,7 @@ export function Home() {
                 </span>
               </Button>
               <Button>
-                <a href={require("../files/Aman-Trivedi-Resume.pdf")} download>
+                <a href={personalnfo?.resumePDFURL} download>
                   <FaCloudDownloadAlt />
                 </a>
               </Button>
@@ -94,7 +94,7 @@ export function Home() {
           </VStack>
           <Box>
             <Image
-              src={require("../files/profile.jpg")}
+              src={personalnfo?.profileURL}
               borderRadius="50%"
               width={["200px", "200px", "300px"]}
             />

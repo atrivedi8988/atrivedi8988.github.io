@@ -9,6 +9,7 @@ import {
   Tr,
 } from "@chakra-ui/react";
 import "aos/dist/aos.css";
+import personalInfo from "../data/personalnfo";
 
 
 export function About() {
@@ -37,34 +38,33 @@ export function About() {
         >
           <Tr>
             <Th>Name</Th>
-            <Td>Aman Trivedi</Td>
+            <Td>{personalInfo?.fullName}</Td>
           </Tr>
           <Tr>
             <Th>Date of birth</Th>
-            <Td>4 July, 2000</Td>
+            <Td>{personalInfo?.dob}</Td>
           </Tr>
           <Tr>
             <Th>Higher Education</Th>
-            <Td>B.Tech (Mechanical Engineering)</Td>
+            <Td>{personalInfo?.higherEducation}</Td>
           </Tr>
           <Tr>
             <Th>Address</Th>
             <Td>
-              131, Patel Nagar, Behind Velocity Talkies, <br /> Indore, M.P.
-              India.
+              {personalInfo?.address}
             </Td>
           </Tr>
           <Tr>
             <Th>Pincode</Th>
-            <Td>452010</Td>
+            <Td>{personalInfo?.pincode}</Td>
           </Tr>
           <Tr>
             <Th>Contact NO.</Th>
-            <Td>9630348988</Td>
+            <Td>{personalInfo?.contactNo}</Td>
           </Tr>
           <Tr>
             <Th>Email ID</Th>
-            <Td>atrivedi8988@gmail.com</Td>
+            <Td>{personalInfo?.emailID}</Td>
           </Tr>
         </Table>
         </Box>
@@ -77,21 +77,7 @@ export function About() {
             data-aos="zoom-in-left"
             fontWeight={"500"}
           >
-            Hello, I am Aman Trivedi from Indore. I graduated in B.Tech
-            Mechanical Engineering in 2022 from Prestige College, RGPV
-            University. During my engineering, I was part of a team that was
-            building a platform for placement services. This exposure excited me
-            and I was keen to build a career in coding. But I didn't have
-            relevant skills. So, I joined Masai school, which offers a 30-week
-            of full-time course on a full-stack web development program. At
-            Masai school, we get hands-on experience to learn front-end and
-            back-end technologies. And also works 600 hours of coding and 60
-            hours of building logical abilities and builds a minimum of 5-6
-            collaborative projects. About my family, my father is a serviceman
-            in a chocolate factory and mother is a teacher and my younger
-            brother is a student. My hobbies and leisure interests include
-            playing chess. I have been a winner in my college. And have a keen
-            interest in watching documentary movies.
+            {personalInfo?.aboutMe}
           </Container>
         </Box>
       </Flex>

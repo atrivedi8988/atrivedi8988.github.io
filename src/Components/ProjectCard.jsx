@@ -12,7 +12,7 @@ export function ProjectCard({ data }) {
       >
         <Box>
           <Image
-            src={require(`../files/${data.img}`)}
+            src={data.img}
             height={["150px", "150px", "300px"]}
             width={["250px", "250px", "500px"]}
             borderRadius={"20px"}

@@ -22,6 +22,7 @@ import { MdEmail } from "react-icons/md";
 import { Link } from "@chakra-ui/react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import personalInfo from "../data/personalnfo";
 
 export function Contact() {
   const { colorMode } = useColorMode();
@@ -55,7 +56,6 @@ export function Contact() {
           pr="50px"
           pl="50px"
           mt={"50px"}
-          
         >
           <VStack mt="50px" data-aos="fade-right">
             <Box>
@@ -102,36 +102,33 @@ export function Contact() {
             </Box>
             <HStack gap={"10px"}>
               <HiLocationMarker />
-              <Text textAlign={"left"}>
-                131, Patel Nagar, Behind Velocity Talkies,
-                <br /> Indore, M.P. India
-              </Text>
+              <Text textAlign={"left"}>{personalInfo?.address}</Text>
             </HStack>
             <HStack gap={"10px"}>
               <BsFillTelephoneFill />
-              <Text>+91 9630348988</Text>
+              <Text>+91 {personalInfo?.contactNo}</Text>
             </HStack>
             <HStack gap={"10px"}>
               <MdEmail />
-              <Text>atrivedi8988@gmail.com</Text>
+              <Text>{personalInfo?.emailID}</Text>
             </HStack>
             <HStack>
               <Box _hover={{ color: "#0A66C2", cursor: "pointer" }}>
                 <Link
-                  href="https://www.linkedin.com/in/aman-trivedi-439362233/"
+                  href={personalInfo?.linkdinURL}
                   target={"_blank"}
                 >
                   <AiFillLinkedin size="25px" />
                 </Link>
               </Box>
               <Box _hover={{ color: "#6e5494", cursor: "pointer" }}>
-                <Link href="https://github.com/atrivedi8988" target={"_blank"}>
+                <Link href={personalInfo?.githubURL} target={"_blank"}>
                   <AiFillGithub size="25px" />
                 </Link>
               </Box>
               <Box _hover={{ color: "#F56040", cursor: "pointer" }}>
                 <Link
-                  href="https://www.instagram.com/amantrivdi/"
+                  href={personalInfo?.instagramURL}
                   target={"_blank"}
                 >
                   <AiFillInstagram size="25px" />
@@ -139,7 +136,7 @@ export function Contact() {
               </Box>
               <Box _hover={{ color: "#4267B2", cursor: "pointer" }}>
                 <Link
-                  href="https://www.facebook.com/aman.trivdi"
+                  href={personalInfo?.facebookURL}
                   target={"_blank"}
                 >
                   <AiFillFacebook size="25px" />
@@ -171,15 +168,17 @@ export function Contact() {
             />
           )}
         </Box>
-        <Box data-aos="fade-zoom-in"
-     data-aos-easing="ease-in-back"
-     data-aos-delay="300"
-     data-aos-offset="0">
+        <Box
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
           <Text>
             Copyright ©2022 All rights reserved | This template is made with ♥
             by{" "}
-            <Link href="https://github.com/atrivedi8988" target={"_blank"}>
-              amantrivedi
+            <Link href={personalInfo?.githubURL} target={"_blank"}>
+              {personalInfo?.userName}
             </Link>
           </Text>
         </Box>
